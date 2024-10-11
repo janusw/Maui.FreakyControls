@@ -6,8 +6,19 @@
     xmlns:local="clr-namespace:Samples"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+
+        <Tab Title="One">
+            <ShellContent Title="One"
+                          ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage1" />
+        </Tab>
+
+        <Tab Title="Two">
+            <ShellContent Title="Two"
+                          ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage2" />
+        </Tab>
+
+    </TabBar>
 </Shell>
